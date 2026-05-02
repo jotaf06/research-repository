@@ -33,7 +33,7 @@ Three evolutionary search strategies are compared:
 |---|---|
 | **Standard** | Fitness based solely on clean accuracy |
 | **Fitness-Robust** | Fitness integrates a robustness metric (MCA over corruptions) |
-| **Fitness-Weighted** | Fitness is a weighted combination: `w * robustness + (1-w) * accuracy` |
+| **Fitness-Weighted** | Fitness is a weighted combination: `w * clean_acc + (1-w) * MCA` |
 
 Each strategy is evaluated across 6 hardware configurations:
 
